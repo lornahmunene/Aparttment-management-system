@@ -1,0 +1,81 @@
+/* Global reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Landing container with static smooth gradient */
+  .landing-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to right, #b185db, #85d7ff);
+    color: white;
+    overflow: hidden;
+  }
+  
+  /* Main content */
+  .main-content {
+    text-align: center;
+    flex-grow: 1;
+    margin-top: 150px;
+    animation: fadeIn 2s ease;
+  }
+  
+  /* Title */
+  .main-title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, #ffffff, #ffe0e0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Description */
+  .main-description {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+  }
+  
+  /* Call to Action Button */
+  .cta-button {
+    padding: 15px 40px;
+    background: linear-gradient(45deg, #ffffff, #e0e0e0);
+    color: #6c5ce7;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+  }
+  
+  .cta-button:hover {
+    background: linear-gradient(45deg, #dfe6e9, #ffffff);
+    transform: scale(1.08);
+  }
+  
+  /* Smooth fadeIn animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
